@@ -1,2 +1,24 @@
 Ejemplo de uso de equipos y ramas
-Esta linea debería dar lugar a un Conflicto
+Blame Casiano for this line
+
+
+# ----------------- Comentario -----------------------------
+Al ejecutar el git merge se produjo la siguiente salida:
+
+Auto-merging read.me
+CONFLICT (content): Merge conflict in read.me
+Automatic merge failed; fix conflicts and then commit the result.
+
+Al abrir el fichero read.me el contenido era el siguiente:
+
+1 Ejemplo de uso de equipos y ramas
+2 <<<<<<< HEAD
+3 Esta linea debería dar lugar a un Conflicto
+4 =======
+5 Blame Casiano for this line
+6 >>>>>>> casiano
+
+Se Sustituyó la línea 3 por la línea 5
+Quedando la línea 2 de la forma:
+
+Blame Casiano for this line
